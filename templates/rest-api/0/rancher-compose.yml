@@ -1,0 +1,11 @@
+.catalog:
+  name: Rest API
+  version: 1.0.0
+  description: 'PopSwap Rest API'
+  uuid: rest-api-1.0.0-0
+  questions:
+    - variable: api_data
+      label: 'API Data'
+      type: string
+      required: true
+      default: api-data
