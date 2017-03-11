@@ -10,3 +10,6 @@
       type: string
       required: true
       default: api-data
+
+rest-api:
+  scale: 1
