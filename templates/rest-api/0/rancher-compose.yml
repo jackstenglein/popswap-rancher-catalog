@@ -6,6 +6,7 @@
   questions:
     - variable: api_data
       label: 'API Data'
+      description: 'The name of the volume to connect the database to.'
       type: string
       required: true
       default: api-data
