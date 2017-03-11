@@ -4,12 +4,14 @@
   description: 'PopSwap Rest API'
   uuid: rest-api-1.0.0-0
   questions:
-    - variable: api_data
-      label: 'API Data'
+    - variable: database_vol
+      label: 'Database Volume'
       description: 'The name of the volume to connect the database to.'
       type: string
       required: true
-      default: api-data
+      default: /mnt/beegfs/api-data
 
 rest-api:
+  scale: 1
+database:
   scale: 1
