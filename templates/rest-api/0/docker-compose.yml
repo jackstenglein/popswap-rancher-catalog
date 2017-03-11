@@ -2,7 +2,7 @@ rest-api:
   image: jackstenglein/swappl-api:latest
   tty: true
   links:
-    - database:swappl-data
+    - mongodb:swappl-data
   labels:
     filebeat: true
     io.rancher.container.pull_image: always
