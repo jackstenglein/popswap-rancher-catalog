@@ -1,6 +1,17 @@
 rest-api:
   image: jackstenglein/swappl-api:latest
   tty: true
+  links:
+    - database:swappl-data
   labels:
     filebeat: true
     io.rancher.container.pull_image: always
+
+database:
+  image: mongo:latest
+  volumes:
+    - ${database_vol}:/data/db
+  tty: true
+  labels:
+    io.rancher.container.pull_image: always
+    ident: true
