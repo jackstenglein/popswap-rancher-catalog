@@ -7,7 +7,7 @@ rest-api:
     filebeat: true
     io.rancher.container.pull_image: always
 
-database:
+mongodb:
   image: mongo:latest
   volumes:
     - ${database_vol}:/data/db

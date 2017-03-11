@@ -13,5 +13,5 @@
 
 rest-api:
   scale: 1
-database:
+mongodb:
   scale: 1
